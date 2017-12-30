@@ -4,8 +4,8 @@
 
 Screen = 
 {
-  _width  = 512,
-  _height = 256,
+  _width  = 1280
+  _height = 720
   _text = "Yindo!",
   _textPosition = { _x=1, _y=1 },
   _displayList = nil,
@@ -182,8 +182,8 @@ end
 function Screen:start()
   print ("Screen:start()\n")
   glut.Init()
-  glut.InitDisplayMode("PAL") -- defaults to auto detect
-  glut.InitWindowSize(800, 600)
+--glut.InitDisplayMode("PAL") -- defaults to auto detect
+  glut.InitWindowSize(1280,720)
   glut.DisplayFunc('display')
   glut.IdleFunc('display')
   glut.ReshapeFunc('reshape')
